@@ -6,7 +6,6 @@ public class CamPosition : MonoBehaviour
 {
     public Transform PlayerPosition;
     
-
     // Update is called once per frame
     void Update()
     {

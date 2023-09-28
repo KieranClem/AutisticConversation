@@ -48,16 +48,15 @@ public class CamMovement : MonoBehaviour
 
         if(RotateToSpeaker)
         {
-            Vector3 newDirection = Vector3.RotateTowards(transform.forward, SpeakerLocation, Time.deltaTime, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newDirection);
-            //transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(SpeakerLocation), Time.deltaTime);
+            //look towards the speaker
+            var rotation = Quaternion.LookRotation(SpeakerLocation - transform.position);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 50 * Time.deltaTime);
         }
     }
 
     public void LookToSpeaker(GameObject Speaker)
     {
         SpeakerLocation = Speaker.transform.position;
-        Debug.Log(Speaker.transform.position);
         RotateToSpeaker = true;
         canMove = false;
     }
