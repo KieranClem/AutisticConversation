@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[CreateAssetMenu(fileName = "Data", menuName = "InformationTracking/StressTracker")]
+
+
 public class StressTracker : ScriptableObject
 {
     public int Stress;
-    private int MaxStress;
+    public int MaxStress;
 
     public int AddToStress(int stressToAdd)
     {
-        Stress += stressToAdd;
+        Stress = Stress + stressToAdd;
 
         if (Stress > MaxStress)
             Stress = MaxStress;
