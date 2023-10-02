@@ -677,6 +677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47e7b6a84eda64649b499322274e0620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TimeBeforeAddingToStress: 0
+  StressToAddEachLoop: 0
+  StressfulLocation: 0
 --- !u!1 &1325478771
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,7 +1157,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1491635360
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
