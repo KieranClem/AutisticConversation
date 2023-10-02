@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CamMovement : MonoBehaviour
 {
+    //General movement information
     public float xSensitivity;
     public float ySensitivity;
 
@@ -14,8 +15,13 @@ public class CamMovement : MonoBehaviour
 
     private bool canMove = true;
 
+    //Information for rotating to the speaker
     private bool RotateToSpeaker = false;
     private Vector3 SpeakerLocation;
+
+    //Information releated to tracking and altering player due to stress
+    private StressMeter tracking;
+    [HideInInspector] public bool CharacterStressed;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +30,8 @@ public class CamMovement : MonoBehaviour
         Cursor.visible = true;
         canMove = true;
         RotateToSpeaker = false;
+        CharacterStressed = false;
+        CheckCurrentStress();
     }
 
     // Update is called once per frame
@@ -31,14 +39,14 @@ public class CamMovement : MonoBehaviour
     {
         if (canMove)
         {
-
-
+            //Tracks the player mouse movements and changes the camera rotation to match
             float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * xSensitivity;
             float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * ySensitivity;
 
             yRotation += mouseX;
 
             xRotation -= mouseY;
+            //locks the camera to stop is from rotating more then 90 degrees up or down
             xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
 
@@ -65,5 +73,27 @@ public class CamMovement : MonoBehaviour
     {
         RotateToSpeaker = false;
         canMove = true;
+    }
+
+    void CheckCurrentStress()
+    {
+        tracking = GameObject.FindGameObjectWithTag("StressManager").GetComponent<StressMeter>();
+        tracking.AddToStress(0);
+    }
+
+    public IEnumerator StartStressMovement()
+    {
+        while (CharacterStressed)
+        {
+
+            xRotation += Random.Range(-100f, 100f) * Time.deltaTime;
+            yRotation += Random.Range(-100f, 100f) * Time.deltaTime;
+
+            transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+            orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+
+            yield return new WaitForSeconds(1f);
+
+        }
     }
 }

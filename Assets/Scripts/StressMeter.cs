@@ -10,7 +10,9 @@ public class StressMeter : MonoBehaviour
     public int TimeBeforeAddingToStress;
     public int StressToAddEachLoop;
     public bool StressfulLocation;
-    
+
+    private CamMovement MainCamera;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,9 @@ public class StressMeter : MonoBehaviour
 
         stressTracker.Stress = 0;
 
+        MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CamMovement>();
+
+
         StartCoroutine(StressIncrease());
     }
 
@@ -29,7 +34,12 @@ public class StressMeter : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Z))
         {
-            StressfulLocation = false;
+            RemoveStress(10);
+        }
+
+        if(Input.GetKeyDown(KeyCode.X))
+        {
+            AddToStress(10);
         }
     }
 
@@ -41,7 +51,13 @@ public class StressMeter : MonoBehaviour
 
         if(currentStress >= 10 && currentStress < 20)
         {
-            //Insert function here
+            //starts first effect and checks if it has already been activates, if it has nothing happens
+            if (!MainCamera.CharacterStressed)
+            {
+                MainCamera.CharacterStressed = true;
+                StartCoroutine(MainCamera.StartStressMovement());
+            }
+            
         }
     }
 
@@ -49,6 +65,12 @@ public class StressMeter : MonoBehaviour
     {
 
         currentStress = stressTracker.DecreaseStress(StressToRemove);
+
+        if (currentStress < 10)
+        {
+            MainCamera.CharacterStressed = false;
+            StopCoroutine(MainCamera.StartStressMovement());
+        }
     }
 
     IEnumerator StressIncrease()
@@ -59,4 +81,25 @@ public class StressMeter : MonoBehaviour
             AddToStress(StressToAddEachLoop);
         }
     }
+
+    /*
+    void MakeCameraMove()
+    {
+        
+        float xPos = MainCamera.transform.rotation.x;
+        float yPos = MainCamera.transform.rotation.y;
+
+        xPos += Random.Range(-10f, 10f) * Time.deltaTime;
+        yPos += Random.Range(-10f, 10f) * Time.deltaTime;
+
+        xPos = Mathf.Clamp(xPos, -20f, 20f);
+        yPos = Mathf.Clamp(yPos, -20f, 20f);
+
+        MainCamera.transform.rotation = Quaternion.Euler(xPos, yPos, 0);
+        CameraOrientation.rotation = Quaternion.Euler(0, yPos, 0);
+
+        Debug.Log(MainCamera.transform.rotation);
+
+        //Debug.Log("Hi");
+    }*/
 }
