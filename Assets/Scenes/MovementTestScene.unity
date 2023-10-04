@@ -2540,7 +2540,7 @@ GameObject:
   - component: {fileID: 1484037690}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: PlayerCharacter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2668,6 +2668,7 @@ MonoBehaviour:
   moveSpeed: 10
   Drag: 5
   orientation: {fileID: 1460765641}
+  CanMove: 1
 --- !u!114 &1484037688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2845,7 +2846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1392715908}
+  selectedFlowchart: {fileID: 1484037688}
 --- !u!4 &1753272466
 Transform:
   m_ObjectHideFlags: 1
