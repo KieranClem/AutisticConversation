@@ -18,6 +18,7 @@ public class CamMovement : MonoBehaviour
     //Information for rotating to the speaker
     private bool RotateToSpeaker = false;
     private Vector3 SpeakerLocation;
+    private PlayerMovement player;
 
     //Information releated to tracking and altering player due to stress
     private StressMeter tracking;
@@ -31,6 +32,7 @@ public class CamMovement : MonoBehaviour
         canMove = true;
         RotateToSpeaker = false;
         CharacterStressed = false;
+        player = GameObject.FindGameObjectWithTag("PlayerCharacter").GetComponent<PlayerMovement>();
         CheckCurrentStress();
     }
 
@@ -67,12 +69,14 @@ public class CamMovement : MonoBehaviour
         SpeakerLocation = Speaker.transform.position;
         RotateToSpeaker = true;
         canMove = false;
+        player.CanMove = false;
     }
 
     public void StopLookingAtSpeaker()
     {
         RotateToSpeaker = false;
         canMove = true;
+        player.CanMove = true;
     }
 
     void CheckCurrentStress()

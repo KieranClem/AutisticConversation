@@ -1272,6 +1272,12 @@ MonoBehaviour:
   TimeBeforeAddingToStress: 5
   StressToAddEachLoop: 1
   StressfulLocation: 1
+  waitTimeBetweenSpawningTextBoxes: 1
+  numberOfTextBoxesThatCanSpawn: 1
+  imageList:
+  - {fileID: 791670989539841027, guid: 78d8cf2a973868548b92e7ca1e9d2462, type: 3}
+  - {fileID: 791670989539841027, guid: c1d239730451a044ea83302796d6c2cc, type: 3}
+  GameCanvas: {fileID: 83195333}
 --- !u!4 &796634432
 Transform:
   m_ObjectHideFlags: 0
@@ -2839,7 +2845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 945879911}
+  selectedFlowchart: {fileID: 1392715908}
 --- !u!4 &1753272466
 Transform:
   m_ObjectHideFlags: 1

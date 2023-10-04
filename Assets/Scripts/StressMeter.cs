@@ -1,17 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StressMeter : MonoBehaviour
 {
     StressTracker stressTracker;
     int currentStress;
 
+    [Header("Information about adding stress")]
+
     public int TimeBeforeAddingToStress;
     public int StressToAddEachLoop;
     public bool StressfulLocation;
 
     private CamMovement MainCamera;
+
+    [Header("Information needed to randomly spawn textboxes")]
+
+    //Information surrounding spawning random UI objects
+    public float waitTimeBetweenSpawningTextBoxes;
+    public float numberOfTextBoxesThatCanSpawn;
+    public List<GameObject> imageList;
+    public RectTransform GameCanvas;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +51,11 @@ public class StressMeter : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.X))
         {
             AddToStress(10);
+        }
+
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            StartCoroutine(SpawnTextBoxes());
         }
     }
 
@@ -80,6 +96,27 @@ public class StressMeter : MonoBehaviour
             yield return new WaitForSeconds(TimeBeforeAddingToStress);
             AddToStress(StressToAddEachLoop);
         }
+    }
+
+    IEnumerator SpawnTextBoxes()
+    {
+        for(int i = 0; i < numberOfTextBoxesThatCanSpawn; i++)
+        {
+            GameObject textBoxToSpawn = imageList[Random.Range(0, imageList.Count)];
+
+            Vector3 spawnPosition = GetBottomLeftCornerOfCanvas(GameCanvas) - new Vector3(Random.Range(0, GameCanvas.rect.x), Random.Range(0, GameCanvas.rect.y), 0);
+
+            GameObject spawnObj = Instantiate(textBoxToSpawn, spawnPosition, Quaternion.identity, GameCanvas);
+
+            yield return new WaitForSeconds(waitTimeBetweenSpawningTextBoxes);
+        }
+    }
+
+    Vector3 GetBottomLeftCornerOfCanvas(RectTransform rectTransform)
+    {
+        Vector3[] v = new Vector3[4];
+        rectTransform.GetWorldCorners(v);
+        return v[0];
     }
 
     /*
