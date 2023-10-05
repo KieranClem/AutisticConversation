@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 791670989539841026}
   - component: {fileID: 791670989539841028}
   - component: {fileID: 791670989539841029}
+  - component: {fileID: 2224151510276013573}
   m_Layer: 5
   m_Name: TestPanel
   m_TagString: Untagged
@@ -33,10 +34,10 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -414.59998, y: 76.441284}
-  m_SizeDelta: {x: -1240.1964, y: -709.9678}
+  m_SizeDelta: {x: 377.8036, y: 230.03223}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &791670989539841028
 CanvasRenderer:
@@ -76,6 +77,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2224151510276013573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791670989539841027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08e40d163300b994eba767133a842599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeTextboxIsActive: 1
 --- !u!1 &2432966899705325062
 GameObject:
   m_ObjectHideFlags: 0
