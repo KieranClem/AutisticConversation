@@ -13,7 +13,7 @@ public class CamMovement : MonoBehaviour
     float xRotation;
     float yRotation;
 
-    private bool canMove = true;
+    public bool canMove = true;
 
     //Information for rotating to the speaker
     private bool RotateToSpeaker = false;
@@ -27,12 +27,21 @@ public class CamMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = true;
+        if (canMove)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            player = GameObject.FindGameObjectWithTag("PlayerCharacter").GetComponent<PlayerMovement>();
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
         canMove = true;
         RotateToSpeaker = false;
         CharacterStressed = false;
-        player = GameObject.FindGameObjectWithTag("PlayerCharacter").GetComponent<PlayerMovement>();
+
         CheckCurrentStress();
     }
 
@@ -90,8 +99,8 @@ public class CamMovement : MonoBehaviour
         while (CharacterStressed)
         {
 
-            xRotation += Random.Range(-100f, 100f) * Time.deltaTime;
-            yRotation += Random.Range(-100f, 100f) * Time.deltaTime;
+            xRotation += Random.Range(-500f, 500f) * Time.deltaTime;
+            yRotation += Random.Range(-500f, 500f) * Time.deltaTime;
 
             transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
             orientation.rotation = Quaternion.Euler(0, yRotation, 0);
