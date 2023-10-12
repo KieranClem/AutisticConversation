@@ -25,8 +25,16 @@ public class StressMeter : MonoBehaviour
     public RectTransform GameCanvas;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        //Checks if a stress meters is already in scene and if so, deletes itself. This is for making testing easier, as I can keep stress meters in conversation scenes for testing without needing to delete them after
+        GameObject [] meters = GameObject.FindGameObjectsWithTag("StressManager");
+        if (meters.Length > 1)
+        {
+            Debug.Log("Extra stress meter deleted");
+            Destroy(this.gameObject);
+        }
+        
         //Make sure this script is only on a empty gameobject, is here just to track the stress meter and activate the appropriate methods
         DontDestroyOnLoad(this.gameObject);
 
@@ -34,8 +42,9 @@ public class StressMeter : MonoBehaviour
 
         stressTracker.Stress = 0;
 
-        MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CamMovement>();
+        currentStress = 0;
 
+        MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CamMovement>();
 
         StartCoroutine(StressIncrease());
     }
@@ -75,6 +84,10 @@ public class StressMeter : MonoBehaviour
             }
             
         }
+        else if(currentStress >= 20)
+        {
+            StartCoroutine(SpawnTextBoxes());
+        }
     }
 
     public void RemoveStress(int StressToRemove)
@@ -104,7 +117,10 @@ public class StressMeter : MonoBehaviour
         {
             GameObject textBoxToSpawn = imageList[Random.Range(0, imageList.Count)];
 
-            Vector3 spawnPosition = GetBottomLeftCornerOfCanvas(GameCanvas) - new Vector3(Random.Range(0, GameCanvas.rect.x), Random.Range(0, GameCanvas.rect.y), 0);
+            float xPos = Random.Range(0, Screen.width);
+            float yPos = Random.Range(0, Screen.height);
+
+            Vector3 spawnPosition = new Vector3(xPos, yPos, 0);
 
             GameObject spawnObj = Instantiate(textBoxToSpawn, spawnPosition, Quaternion.identity, GameCanvas);
 
@@ -112,31 +128,12 @@ public class StressMeter : MonoBehaviour
         }
     }
 
-    Vector3 GetBottomLeftCornerOfCanvas(RectTransform rectTransform)
+    public void UpdateVariables()
     {
-        Vector3[] v = new Vector3[4];
-        rectTransform.GetWorldCorners(v);
-        return v[0];
+        if(GameCanvas == null)
+        {
+            GameCanvas = GameObject.FindGameObjectWithTag("CanvasForTextBoxes").GetComponent<RectTransform>();
+            MainCamera = MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CamMovement>();
+        }
     }
-
-    /*
-    void MakeCameraMove()
-    {
-        
-        float xPos = MainCamera.transform.rotation.x;
-        float yPos = MainCamera.transform.rotation.y;
-
-        xPos += Random.Range(-10f, 10f) * Time.deltaTime;
-        yPos += Random.Range(-10f, 10f) * Time.deltaTime;
-
-        xPos = Mathf.Clamp(xPos, -20f, 20f);
-        yPos = Mathf.Clamp(yPos, -20f, 20f);
-
-        MainCamera.transform.rotation = Quaternion.Euler(xPos, yPos, 0);
-        CameraOrientation.rotation = Quaternion.Euler(0, yPos, 0);
-
-        Debug.Log(MainCamera.transform.rotation);
-
-        //Debug.Log("Hi");
-    }*/
 }

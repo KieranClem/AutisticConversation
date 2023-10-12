@@ -6,6 +6,7 @@ TagManager:
   tags:
   - StressManager
   - PlayerCharacter
+  - CanvasForTextBoxes
   layers:
   - Default
   - TransparentFX

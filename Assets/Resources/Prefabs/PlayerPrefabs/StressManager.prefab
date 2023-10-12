@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7249629435475789478}
   - component: {fileID: 7249629435475789529}
+  - component: {fileID: 1855267061}
   m_Layer: 0
   m_Name: StressManager
   m_TagString: StressManager
@@ -52,3 +53,19 @@ MonoBehaviour:
   - {fileID: 791670989539841027, guid: 78d8cf2a973868548b92e7ca1e9d2462, type: 3}
   - {fileID: 791670989539841027, guid: c1d239730451a044ea83302796d6c2cc, type: 3}
   GameCanvas: {fileID: 0}
+--- !u!114 &1855267061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7249629435475789528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4468a0ae7b2e10c48b14a2cb2f2ac738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NormalTextBoxWidth: 1500
+  NormatTextBoxHeight: 335
+  SmallTextBoxWidth: 460
+  SmallTextBoxHeight: 600
