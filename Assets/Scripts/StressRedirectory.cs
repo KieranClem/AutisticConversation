@@ -16,4 +16,9 @@ public class StressRedirectory : MonoBehaviour
     {
         mainStressMeter.AddToStress(StressToAdd);
     }
+
+    public void RedirectStressDecrease(int StressToTakeAway)
+    {
+        mainStressMeter.RemoveStress(StressToTakeAway);
+    }
 }

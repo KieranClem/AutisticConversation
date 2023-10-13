@@ -8,6 +8,9 @@ public class StressMeter : MonoBehaviour
     StressTracker stressTracker;
     int currentStress;
 
+    public Text stressMeterGauge;
+    private bool CanSeeStressGauge = false;
+
     [Header("Information about adding stress")]
 
     public int TimeBeforeAddingToStress;
@@ -44,6 +47,10 @@ public class StressMeter : MonoBehaviour
 
         currentStress = 0;
 
+        stressMeterGauge.text = currentStress.ToString() + "/" + stressTracker.MaxStress.ToString();
+
+        stressMeterGauge.transform.parent.gameObject.SetActive(CanSeeStressGauge);
+
         MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CamMovement>();
 
         StartCoroutine(StressIncrease());
@@ -65,6 +72,12 @@ public class StressMeter : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.C))
         {
             StartCoroutine(SpawnTextBoxes());
+        }
+
+        if(Input.GetKeyDown(KeyCode.H))
+        {
+            CanSeeStressGauge = !CanSeeStressGauge;
+            stressMeterGauge.transform.parent.gameObject.SetActive(CanSeeStressGauge);
         }
     }
 
@@ -88,6 +101,8 @@ public class StressMeter : MonoBehaviour
         {
             StartCoroutine(SpawnTextBoxes());
         }
+
+        stressMeterGauge.text = currentStress.ToString() + "/" + stressTracker.MaxStress.ToString();
     }
 
     public void RemoveStress(int StressToRemove)
@@ -133,7 +148,10 @@ public class StressMeter : MonoBehaviour
         if(GameCanvas == null)
         {
             GameCanvas = GameObject.FindGameObjectWithTag("CanvasForTextBoxes").GetComponent<RectTransform>();
-            MainCamera = MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CamMovement>();
+            MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CamMovement>();
+            stressMeterGauge = GameObject.FindGameObjectWithTag("StressGauge").GetComponent<Text>();
+            stressMeterGauge.text = currentStress.ToString() + "/" + stressTracker.MaxStress.ToString();
+            stressMeterGauge.transform.parent.gameObject.SetActive(CanSeeStressGauge);
         }
     }
 }
