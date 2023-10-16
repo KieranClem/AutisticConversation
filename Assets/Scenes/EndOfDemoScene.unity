@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035, y: -286}
-  m_SizeDelta: {x: 353.3839, y: 83.6438}
+  m_AnchoredPosition: {x: 2.9588, y: -179.5585}
+  m_SizeDelta: {x: 427.069, y: 80.8846}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374716636
 MonoBehaviour:
@@ -452,8 +452,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 320.76}
-  m_SizeDelta: {x: 501.5938, y: 258.4711}
+  m_AnchoredPosition: {x: 2.9589, y: 135.761}
+  m_SizeDelta: {x: 559.105, y: 171.7383}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582408094
 MonoBehaviour:
@@ -477,7 +477,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 98
+    m_FontSize: 57
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -794,8 +794,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 766.913, y: 342.5767}
+  m_AnchoredPosition: {x: 2.9589005, y: 0.0000076293945}
+  m_SizeDelta: {x: 631.2789, y: 129.0499}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1275879802
 MonoBehaviour:
@@ -819,7 +819,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 46
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -830,8 +830,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: There are a few different routes for conversation (three) so if you can
-    please play them all and give some feedback in the questionnaire given.
+  m_Text: There are a few small variations for conversation so if you can please
+    play them all and give some feedback in the questionnaire given.
 --- !u!222 &1275879803
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -169,6 +169,7 @@ public class StressMeter : MonoBehaviour
             MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CamMovement>();
             stressMeterGauge = GameObject.FindGameObjectWithTag("StressGauge").GetComponent<Text>();
             stressMeterGauge.text = currentStress.ToString() + "/" + stressTracker.MaxStress.ToString();
+            StressfulLocation = false;
             stressMeterGauge.transform.parent.gameObject.SetActive(CanSeeStressGauge);
         }
     }
