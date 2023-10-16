@@ -26,6 +26,8 @@ public class StressMeter : MonoBehaviour
     public float numberOfTextBoxesThatCanSpawn;
     public List<GameObject> imageList;
     public RectTransform GameCanvas;
+    private bool SpawningTextBoxes = false;
+    [HideInInspector] public List<GameObject> textBoxesThatHaveBeenSpawned;
 
     // Start is called before the first frame update
     void Awake()
@@ -99,6 +101,7 @@ public class StressMeter : MonoBehaviour
         }
         else if(currentStress >= 20)
         {
+            SpawningTextBoxes = true;
             StartCoroutine(SpawnTextBoxes());
         }
 
@@ -114,6 +117,19 @@ public class StressMeter : MonoBehaviour
         {
             MainCamera.CharacterStressed = false;
             StopCoroutine(MainCamera.StartStressMovement());
+            MainCamera.LookToSpeaker(GameObject.FindGameObjectWithTag("ConversationPartner").gameObject);
+        }
+
+        if(currentStress < 20)
+        {
+            StopCoroutine(SpawnTextBoxes());
+            SpawningTextBoxes = false;
+            foreach(GameObject box in textBoxesThatHaveBeenSpawned)
+            {
+                Destroy(box);
+            }
+
+            textBoxesThatHaveBeenSpawned.Clear();
         }
     }
 
@@ -128,7 +144,7 @@ public class StressMeter : MonoBehaviour
 
     IEnumerator SpawnTextBoxes()
     {
-        for(int i = 0; i < numberOfTextBoxesThatCanSpawn; i++)
+        while(SpawningTextBoxes == true)
         {
             GameObject textBoxToSpawn = imageList[Random.Range(0, imageList.Count)];
 
@@ -138,6 +154,8 @@ public class StressMeter : MonoBehaviour
             Vector3 spawnPosition = new Vector3(xPos, yPos, 0);
 
             GameObject spawnObj = Instantiate(textBoxToSpawn, spawnPosition, Quaternion.identity, GameCanvas);
+
+            textBoxesThatHaveBeenSpawned.Add(spawnObj);
 
             yield return new WaitForSeconds(waitTimeBetweenSpawningTextBoxes);
         }

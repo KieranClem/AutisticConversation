@@ -7,7 +7,17 @@ public class LoadConvoScene : MonoBehaviour
 {
     private void Awake()
     {
-        GameObject.FindGameObjectWithTag("StressManager").GetComponent<StressMeter>().UpdateVariables();
+        GameObject stressMeter = GameObject.FindGameObjectWithTag("StressManager");
+        if(stressMeter != null)
+        {
+            stressMeter.GetComponent<StressMeter>().UpdateVariables();
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        
     }
 
     public void LoadNeededScene(string CharacterName)
@@ -15,5 +25,16 @@ public class LoadConvoScene : MonoBehaviour
         CharacterName += "Scene";
 
         SceneManager.LoadScene(CharacterName);
+    }
+
+    public void LoadEndOfDemoScene()
+    {
+        Destroy(GameObject.FindGameObjectWithTag("StressManager").gameObject);
+        SceneManager.LoadScene("EndOfDemoScene");
+    }
+
+    public void LoadStartOfDemoScene()
+    {
+        SceneManager.LoadScene("DemoScene1");
     }
 }

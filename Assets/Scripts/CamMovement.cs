@@ -64,6 +64,10 @@ public class CamMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
             orientation.rotation = Quaternion.Euler(0, yRotation, 0);
         }
+        else
+        {
+            LookToSpeaker(GameObject.FindGameObjectWithTag("ConversationPartner").gameObject);
+        }
 
         if(RotateToSpeaker)
         {
@@ -78,7 +82,11 @@ public class CamMovement : MonoBehaviour
         SpeakerLocation = Speaker.transform.position;
         RotateToSpeaker = true;
         canMove = false;
-        player.CanMove = false;
+        if(canMove)
+        {
+            player.CanMove = false;
+        }
+        
     }
 
     public void StopLookingAtSpeaker()

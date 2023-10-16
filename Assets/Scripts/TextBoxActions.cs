@@ -24,6 +24,7 @@ public class TextBoxActions : MonoBehaviour
     IEnumerator EndExistence()
     {
         yield return new WaitForSeconds(timeTextboxIsActive);
+        GameObject.FindGameObjectWithTag("StressManager").GetComponent<StressMeter>().textBoxesThatHaveBeenSpawned.Remove(this.gameObject);
         Destroy(this.gameObject);
     }
 }
