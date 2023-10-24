@@ -102,6 +102,7 @@ public class StressMeter : MonoBehaviour
         else if(currentStress >= 20)
         {
             SpawningTextBoxes = true;
+            this.GetComponent<AudioSource>().Play();
             StartCoroutine(SpawnTextBoxes());
         }
 
@@ -128,7 +129,7 @@ public class StressMeter : MonoBehaviour
             {
                 Destroy(box);
             }
-
+            this.GetComponent<AudioSource>().Stop();
             textBoxesThatHaveBeenSpawned.Clear();
         }
     }

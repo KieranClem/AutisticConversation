@@ -23,6 +23,7 @@ public class CamMovement : MonoBehaviour
     //Information releated to tracking and altering player due to stress
     private StressMeter tracking;
     [HideInInspector] public bool CharacterStressed;
+    Quaternion trackLookLocation;
 
     // Start is called before the first frame update
     void Start()
@@ -66,7 +67,11 @@ public class CamMovement : MonoBehaviour
         }
         else
         {
-            LookToSpeaker(GameObject.FindGameObjectWithTag("ConversationPartner").gameObject);
+            GameObject convoPartner = GameObject.FindGameObjectWithTag("ConversationPartner");
+            if(convoPartner != null)
+            {
+                LookToSpeaker(convoPartner.gameObject);
+            }
         }
 
         if(RotateToSpeaker)
@@ -74,6 +79,14 @@ public class CamMovement : MonoBehaviour
             //look towards the speaker
             var rotation = Quaternion.LookRotation(SpeakerLocation - transform.position);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 50 * Time.deltaTime);
+            Debug.Log("hi");
+        }
+
+        if(CharacterStressed)
+        {
+
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, trackLookLocation, 50 * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, trackLookLocation, 50 * Time.deltaTime);
         }
     }
 
@@ -81,10 +94,13 @@ public class CamMovement : MonoBehaviour
     {
         SpeakerLocation = Speaker.transform.position;
         RotateToSpeaker = true;
+
         canMove = false;
-        if(canMove)
+
+        if(player)
         {
             player.CanMove = false;
+            
         }
         
     }
@@ -110,7 +126,8 @@ public class CamMovement : MonoBehaviour
             xRotation += Random.Range(-500f, 500f) * Time.deltaTime;
             yRotation += Random.Range(-500f, 500f) * Time.deltaTime;
 
-            transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+            trackLookLocation = Quaternion.Euler(xRotation, yRotation, 0);
+            //transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
             orientation.rotation = Quaternion.Euler(0, yRotation, 0);
 
             yield return new WaitForSeconds(1f);
