@@ -79,7 +79,6 @@ public class CamMovement : MonoBehaviour
             //look towards the speaker
             var rotation = Quaternion.LookRotation(SpeakerLocation - transform.position);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 50 * Time.deltaTime);
-            Debug.Log("hi");
         }
 
         if(CharacterStressed)
