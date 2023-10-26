@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 0}
-  PlayerTextBoxColour: {r: 0.14901961, g: 1, b: 0, a: 0}
-  ConversationPartnerTextBoxColour: {r: 0, g: 0, b: 0, a: 0}
+  PlayerTextBoxColour: {r: 0.14901961, g: 1, b: 0, a: 1}
+  ConversationPartnerTextBoxColour: {r: 0, g: 0, b: 0, a: 1}
