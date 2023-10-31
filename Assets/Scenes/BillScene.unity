@@ -1233,9 +1233,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 250528473}
+  - {fileID: 250528461}
   selectedCommands:
-  - {fileID: 250528582}
+  - {fileID: 250528547}
   variables: []
   description: 
   stepPause: 0
@@ -4562,7 +4562,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &250528581
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4590,7 +4590,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &250528582
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4617,7 +4617,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &250528583
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4645,7 +4645,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &250528584
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5595,6 +5595,10 @@ PrefabInstance:
       propertyPath: stressMeterGauge
       value: 
       objectReference: {fileID: 284354714}
+    - target: {fileID: 7249629435475789529, guid: e3582a625b7720044aef36ee8a9894cd, type: 3}
+      propertyPath: InNoisyEnviroment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7249629435475789529, guid: e3582a625b7720044aef36ee8a9894cd, type: 3}
       propertyPath: StressfulLocation
       value: 0

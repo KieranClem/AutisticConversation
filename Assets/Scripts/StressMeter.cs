@@ -22,6 +22,7 @@ public class StressMeter : MonoBehaviour
     [Header("Information needed to randomly spawn textboxes")]
 
     //Information surrounding spawning random UI objects
+    public bool InNoisyEnviroment;
     public float waitTimeBetweenSpawningTextBoxes;
     public float numberOfTextBoxesThatCanSpawn;
     public List<GameObject> imageList;
@@ -36,10 +37,18 @@ public class StressMeter : MonoBehaviour
         GameObject [] meters = GameObject.FindGameObjectsWithTag("StressManager");
         if (meters.Length > 1)
         {
+            //Allows for variables to be updated to match the current scene eg if the enviroment is noisy the redundent stress meter will inform the already existing one of that before deleteing itself
+            foreach(GameObject meter in meters)
+            {
+                if(meter != this.gameObject)
+                {
+                    meter.GetComponent<StressMeter>().InNoisyEnviroment = InNoisyEnviroment;
+                    meter.GetComponent<StressMeter>().AddToStress(0);
+                }
+            }
             Debug.Log("Extra stress meter deleted");
             Destroy(this.gameObject);
         }
-        
         //Make sure this script is only on a empty gameobject, is here just to track the stress meter and activate the appropriate methods
         DontDestroyOnLoad(this.gameObject);
 
@@ -99,7 +108,7 @@ public class StressMeter : MonoBehaviour
             }
             
         }
-        else if(currentStress >= 20)
+        else if(currentStress >= 20 && InNoisyEnviroment)
         {
             SpawningTextBoxes = true;
             this.GetComponent<AudioSource>().Play();
