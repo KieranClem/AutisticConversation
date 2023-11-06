@@ -37,4 +37,9 @@ public class LoadConvoScene : MonoBehaviour
     {
         SceneManager.LoadScene("DemoScene1");
     }
+
+    public void LoadScenario2()
+    {
+        SceneManager.LoadScene("JosephScene");
+    }
 }

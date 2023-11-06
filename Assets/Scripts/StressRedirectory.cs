@@ -10,11 +10,14 @@ public class StressRedirectory : MonoBehaviour
     void Start()
     {
         mainStressMeter = GameObject.FindGameObjectWithTag("StressManager").GetComponent<StressMeter>();
+
+        Debug.Log(mainStressMeter.name);
     }
 
     public void RedirectStressAdition(int StressToAdd)
     {
         mainStressMeter.AddToStress(StressToAdd);
+        
     }
 
     public void RedirectStressDecrease(int StressToTakeAway)

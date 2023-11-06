@@ -96,14 +96,17 @@ public class StressMeter : MonoBehaviour
     {
         currentStress = stressTracker.AddToStress(StressToAdd);
 
+       
+
         //from here add a checker to see how stressed the character is and add the triggers that will call the effects
 
-        if(currentStress >= 10 && currentStress < 20)
+        if (currentStress >= 10 && currentStress < 20)
         {
             //starts first effect and checks if it has already been activates, if it has nothing happens
             if (!MainCamera.CharacterStressed)
             {
                 MainCamera.CharacterStressed = true;
+                MainCamera.CancelRotationToSpeaker();
                 StartCoroutine(MainCamera.StartStressMovement());
             }
             
@@ -130,7 +133,7 @@ public class StressMeter : MonoBehaviour
             MainCamera.LookToSpeaker(GameObject.FindGameObjectWithTag("ConversationPartner").gameObject);
         }
 
-        if(currentStress < 20)
+        if (currentStress < 20)
         {
             StopCoroutine(SpawnTextBoxes());
             SpawningTextBoxes = false;

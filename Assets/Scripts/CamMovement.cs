@@ -104,6 +104,11 @@ public class CamMovement : MonoBehaviour
         
     }
 
+    public void CancelRotationToSpeaker()
+    {
+        RotateToSpeaker = true;
+    }
+
     public void StopLookingAtSpeaker()
     {
         RotateToSpeaker = false;
