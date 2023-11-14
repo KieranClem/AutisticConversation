@@ -6005,6 +6005,11 @@ RectTransform:
   m_AnchoredPosition: {x: -750.0001, y: 0}
   m_SizeDelta: {x: 1500, y: 335}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &1601081825 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4117134579640175484, guid: 4754262b0df96ca449cf23508a83265b, type: 3}
+  m_PrefabInstance: {fileID: 316518957}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1710940944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6012,6 +6017,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1762319637646283619, guid: 67f5a4603735d4b4482b8f36b30bef8a, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1601081825}
     - target: {fileID: 6249858333692833024, guid: 67f5a4603735d4b4482b8f36b30bef8a, type: 3}
       propertyPath: m_Name
       value: SceneManager

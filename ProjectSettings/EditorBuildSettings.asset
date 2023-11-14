@@ -21,9 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/EndOfDemoScene.unity
     guid: 272c584ca58798a4aabea4d6720bb43b
   - enabled: 0
-    path: Assets/Scenes/MovementTestScene.unity
+    path: Assets/Scenes/TestScenes/MovementTestScene.unity
     guid: b9f5614aa828944419a62aede54c917f
   - enabled: 0
-    path: Assets/Scenes/TestCharacterScene.unity
+    path: Assets/Scenes/TestScenes/TestCharacterScene.unity
     guid: c986df5ab05a7834c819a9515b408db8
   m_configObjects: {}

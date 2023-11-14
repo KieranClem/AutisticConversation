@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class LoadConvoScene : MonoBehaviour
 {
+
+    private FadeController fadeController;
+    private Animator animator;
+
     private void Awake()
     {
+        fadeController = this.GetComponent<FadeController>();
+        animator = fadeController.animator;
+        
         GameObject stressMeter = GameObject.FindGameObjectWithTag("StressManager");
         if(stressMeter != null)
         {
@@ -22,24 +29,43 @@ public class LoadConvoScene : MonoBehaviour
 
     public void LoadNeededScene(string CharacterName)
     {
+        fadeController.FadeOut();
+
         CharacterName += "Scene";
 
-        SceneManager.LoadScene(CharacterName);
+
+        StartCoroutine(LoadScene(CharacterName));
+        //SceneManager.LoadScene(CharacterName);
     }
 
     public void LoadEndOfDemoScene()
     {
+        fadeController.FadeOut();
         Destroy(GameObject.FindGameObjectWithTag("StressManager").gameObject);
-        SceneManager.LoadScene("EndOfDemoScene");
+        StartCoroutine(LoadScene("EndOfDemoScene"));
+        //SceneManager.LoadScene("EndOfDemoScene");
     }
 
     public void LoadStartOfDemoScene()
     {
-        SceneManager.LoadScene("DemoScene1");
+        fadeController.FadeOut();
+
+        StartCoroutine(LoadScene("DemoScene1"));
+        //SceneManager.LoadScene("DemoScene1");
     }
 
     public void LoadScenario2()
     {
-        SceneManager.LoadScene("JosephScene");
+        fadeController.FadeOut();
+
+        StartCoroutine(LoadScene("JosephScene"));
+        //SceneManager.LoadScene("JosephScene");
+    }
+
+    private IEnumerator LoadScene(string SceneName)
+    {
+        yield return new WaitForSeconds(animator.runtimeAnimatorController.animationClips[0].length);
+        SceneManager.LoadScene(SceneName);
+
     }
 }
