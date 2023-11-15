@@ -24,6 +24,7 @@ public class CamMovement : MonoBehaviour
     private StressMeter tracking;
     [HideInInspector] public bool CharacterStressed;
     Quaternion trackLookLocation;
+    public float StrengthOfCameraShaking = 500f;
 
     // Start is called before the first frame update
     void Start()
@@ -127,8 +128,8 @@ public class CamMovement : MonoBehaviour
         while (CharacterStressed)
         {
 
-            xRotation += Random.Range(-500f, 500f) * Time.deltaTime;
-            yRotation += Random.Range(-500f, 500f) * Time.deltaTime;
+            xRotation += Random.Range(-StrengthOfCameraShaking, StrengthOfCameraShaking) * Time.deltaTime;
+            yRotation += Random.Range(-StrengthOfCameraShaking, StrengthOfCameraShaking) * Time.deltaTime;
 
             trackLookLocation = Quaternion.Euler(xRotation, yRotation, 0);
             //transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
