@@ -5355,6 +5355,7 @@ MonoBehaviour:
   orientation: {fileID: 516960902}
   canMove: 0
   CharacterStressed: 0
+  StrengthOfCameraShaking: 500
 --- !u!1 &575210908
 GameObject:
   m_ObjectHideFlags: 0
