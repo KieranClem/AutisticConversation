@@ -107,7 +107,7 @@ public class StressMeter : MonoBehaviour
             {
                 MainCamera.CharacterStressed = true;
                 MainCamera.CancelRotationToSpeaker();
-                StartCoroutine(MainCamera.StartStressMovement());
+                StartCoroutine(MainCamera.LookBetweenTwoPoints());
             }
             
         }

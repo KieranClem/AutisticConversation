@@ -25,6 +25,9 @@ public class CamMovement : MonoBehaviour
     [HideInInspector] public bool CharacterStressed;
     Quaternion trackLookLocation;
     public float StrengthOfCameraShaking = 500f;
+    public GameObject LookPoint1;
+    public GameObject LookPoint2;
+    private GameObject PointToLookTo;
 
     // Start is called before the first frame update
     void Start()
@@ -39,10 +42,15 @@ public class CamMovement : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            GameObject convoPartner = GameObject.FindGameObjectWithTag("ConversationPartner");
+            if (convoPartner != null)
+            {
+                LookToSpeaker(convoPartner.gameObject);
+            }
         }
-        canMove = true;
-        RotateToSpeaker = false;
-        CharacterStressed = false;
+        //canMove = true;
+        //RotateToSpeaker = false;
+        //CharacterStressed = false;
 
         CheckCurrentStress();
     }
@@ -66,27 +74,32 @@ public class CamMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
             orientation.rotation = Quaternion.Euler(0, yRotation, 0);
         }
-        else
+        /*else
         {
-            GameObject convoPartner = GameObject.FindGameObjectWithTag("ConversationPartner");
-            if(convoPartner != null)
-            {
-                LookToSpeaker(convoPartner.gameObject);
-            }
-        }
+
+        }*/
+
+       
 
         if(RotateToSpeaker)
         {
             //look towards the speaker
             var rotation = Quaternion.LookRotation(SpeakerLocation - transform.position);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 50 * Time.deltaTime);
+            if(transform.rotation == rotation)
+            {
+                RotateToSpeaker = false;
+            }
         }
 
         if(CharacterStressed)
         {
 
             //transform.rotation = Quaternion.RotateTowards(transform.rotation, trackLookLocation, 50 * Time.deltaTime);
-            transform.rotation = Quaternion.Lerp(transform.rotation, trackLookLocation, 50 * Time.deltaTime);
+            //transform.rotation = Quaternion.Lerp(transform.rotation, trackLookLocation, 50 * Time.deltaTime);
+            var rotation = Quaternion.LookRotation(PointToLookTo.transform.position - transform.position);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 100 * Time.deltaTime);
+            
         }
     }
 
@@ -107,7 +120,7 @@ public class CamMovement : MonoBehaviour
 
     public void CancelRotationToSpeaker()
     {
-        RotateToSpeaker = true;
+        RotateToSpeaker = false;
     }
 
     public void StopLookingAtSpeaker()
@@ -137,6 +150,27 @@ public class CamMovement : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
 
+        }
+    }
+
+    public IEnumerator LookBetweenTwoPoints()
+    {
+        while (CharacterStressed)
+        {
+            if (PointToLookTo == null)
+            {
+                PointToLookTo = LookPoint1;
+            }
+            else if (PointToLookTo == LookPoint1)
+            {
+                PointToLookTo = LookPoint2;
+            }
+            else if (PointToLookTo == LookPoint2)
+            {
+                PointToLookTo = LookPoint1;
+            }
+
+            yield return new WaitForSeconds(2f);
         }
     }
 }
