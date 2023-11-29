@@ -54,6 +54,20 @@ public class LoadConvoScene : MonoBehaviour
         //SceneManager.LoadScene("DemoScene1");
     }
 
+    public void LoadDemoScene2()
+    {
+        fadeController.FadeOut();
+
+        StartCoroutine(LoadScene("DemoScene2"));
+    }
+
+    public void LoadDemoScene3()
+    {
+        fadeController.FadeOut();
+
+        StartCoroutine(LoadScene("DemoScene3"));
+    }
+
     public void LoadScenario2()
     {
         fadeController.FadeOut();

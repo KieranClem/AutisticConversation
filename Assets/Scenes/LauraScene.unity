@@ -522,9 +522,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 195969752}
+  - {fileID: 195969708}
   selectedCommands:
-  - {fileID: 195969751}
+  - {fileID: 195969764}
   variables: []
   description: 
   stepPause: 0
@@ -5621,8 +5621,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: LoadConvoScene
-  targetMethod: LoadEndOfDemoScene
-  targetMethodText: 'LoadEndOfDemoScene (): Void'
+  targetMethod: LoadDemoScene3
+  targetMethodText: 'LoadDemoScene3 (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 
@@ -6022,8 +6022,8 @@ MonoBehaviour:
     Culture=neutral, PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: LoadConvoScene
-  targetMethod: LoadEndOfDemoScene
-  targetMethodText: 'LoadEndOfDemoScene (): Void'
+  targetMethod: LoadDemoScene3
+  targetMethodText: 'LoadDemoScene3 (): Void'
   methodParameters: []
   saveReturnValue: 0
   returnValueVariableKey: 

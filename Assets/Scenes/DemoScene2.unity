@@ -1763,7 +1763,7 @@ GameObject:
   - component: {fileID: 985194664}
   - component: {fileID: 985194663}
   m_Layer: 0
-  m_Name: Bill
+  m_Name: Laura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1781,7 +1781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Character Name
+  nameText: Laura
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
@@ -3757,31 +3757,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.59
+      value: 65.46
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.73
+      value: 2.14
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 44.44
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.900714
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.43441257
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3789,7 +3789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 51.496
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649771, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3840,8 +3840,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2122820710}
     - target: {fileID: 5179785552333649780, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 985194663}
+    - target: {fileID: 5179785552333649780, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: storyText
-      value: Oh hey, you're here. Let's get going then
+      value: Ahh, there you are. I have a few ideas of places to go! Come on lets
+        go
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649781, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: conditions.Array.data[0].anyVar.data.colliderData.colliderRef
@@ -3881,7 +3886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649789, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: methodParameters.Array.data[0].objValue.stringValue
-      value: Bill
+      value: Laura
       objectReference: {fileID: 0}
     - target: {fileID: 5179785552333649789, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
       propertyPath: methodParameters.Array.data[0].objValue.typeFullname
