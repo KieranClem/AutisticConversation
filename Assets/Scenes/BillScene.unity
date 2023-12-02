@@ -599,7 +599,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -168.206
     y: 226.30408
-    width: 206.52159
+    width: 212.79053
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -653,8 +653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 19
   indentLevel: 0
-  storyText: Uh, yeah but it would suck going around a shop on my own, but I'm not
-    sure who might want to go
+  storyText: Uh, yeah but it would suck going around a shop on my own. I'm not sure
+    who might want to go.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -683,7 +683,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -168.85304
     y: 154.06854
-    width: 205.07231
+    width: 212.79053
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -710,7 +710,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  text: cool
+  text: Cool.
   description: 
   targetBlock: {fileID: 250528442}
   hideIfVisited: 0
@@ -735,7 +735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  storyText: Oh I'm okay, not much has happened, been thinking of going to the shops
+  storyText: Oh I'm okay, not much has happened. Been thinking of going to the shops
     today.
   description: 
   character: {fileID: 575210909}
@@ -792,7 +792,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 258.375
     y: 283.82343
-    width: 132.60861
+    width: 132.17046
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: '*sigh* okay then. You know what lets move on'
+  storyText: '*sigh* Okay then, you know what let''s move on.'
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -876,7 +876,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 257.76492
     y: 219.61809
-    width: 132.60861
+    width: 132.17046
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -958,7 +958,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 258.29395
     y: 152.70583
-    width: 131.15933
+    width: 132.17046
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1016,7 +1016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  storyText: ...okay, anything happen to you, you do anything interesting?
+  storyText: ...okay, anything happen to you; you do anything interesting?
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -1045,7 +1045,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 261.87854
     y: 81.496315
-    width: 129.71007
+    width: 130.62007
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -169.47057
     y: 83.352936
-    width: 203.62305
+    width: 211.24014
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1195,7 +1195,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 63
     y: 22
-    width: 173.1883
+    width: 178.68204
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1222,11 +1222,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1609.2515, y: -238.6103}
+  scrollPos: {x: 2243.7898, y: 188.98837}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 401.66666
-  zoom: 0.46000046
+  zoom: 0.43000045
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1234,9 +1234,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 250528537}
+  - {fileID: 250528452}
   selectedCommands:
-  - {fileID: 250528540}
+  - {fileID: 250528465}
   variables: []
   description: 
   stepPause: 0
@@ -1276,8 +1276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 23
   indentLevel: 0
-  storyText: I dunno everyone seems so busy but I really want to go today but I also
-    don't want to go on my own
+  storyText: I dunno everyone, seems so busy. I really want to go today but I also
+    don't want to go on my own.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -1304,8 +1304,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 53
   indentLevel: 0
-  storyText: '*Their voice starts gets slightly slower, their voice sound a little
-    more guttural then before*'
+  storyText: '*Their voice starts gets slightly slower... it also sounds a little
+    more guttural than before*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1332,7 +1332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 52
   indentLevel: 0
-  storyText: Fair enough
+  storyText: Fair enough.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -1361,7 +1361,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -164.27916
     y: 642.6166
-    width: 190.57957
+    width: 194.1859
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 50
   indentLevel: 0
-  text: Dunno, you never said. I'll get ready to go now
+  text: Dunno, you never said. I'll get ready to go now.
   description: 
   targetBlock: {fileID: 250528467}
   hideIfVisited: 0
@@ -1442,7 +1442,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -157.69992
     y: 578.1434
-    width: 177.5361
+    width: 178.68204
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1469,7 +1469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 47
   indentLevel: 0
-  text: Oh we're going now?
+  text: Oh, we're going now?
   description: 
   targetBlock: {fileID: 250528470}
   hideIfVisited: 0
@@ -1523,7 +1523,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -156.9506
     y: 515.54407
-    width: 177.5361
+    width: 178.68204
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1552,7 +1552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  text: Okay, I can go
+  text: Okay, I can go.
   description: 
   targetBlock: {fileID: 250528473}
   hideIfVisited: 0
@@ -1577,7 +1577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 43
   indentLevel: 0
-  storyText: Yeah we should be back by that point
+  storyText: Yeah, we should be back by that time.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -1606,7 +1606,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -155.77411
     y: 447.30872
-    width: 176.08684
+    width: 178.68204
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1659,7 +1659,7 @@ MonoBehaviour:
   itemId: 40
   indentLevel: 0
   storyText: Uhh, shouldn't be at this time. I'm not sure, I kinda just want to wander
-    around for a bit
+    around for a bit.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -1688,7 +1688,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -154.59763
     y: 375.54382
-    width: 174.63757
+    width: 177.13165
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1715,7 +1715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 0
-  storyText: Okay then, guess I'll try and figure something else out
+  storyText: Okay then, guess I'll try and figure something else out.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -1744,7 +1744,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -415.77448
     y: 446.76096
-    width: 148.55063
+    width: 153.87585
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1771,7 +1771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 0
-  text: Don't really want to
+  text: Don't really want to.
   description: 
   targetBlock: {fileID: 250528481}
   hideIfVisited: 0
@@ -1823,7 +1823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 34
   indentLevel: 0
-  text: Not really
+  text: Not really.
   description: 
   targetBlock: {fileID: 250528487}
   hideIfVisited: 0
@@ -1873,7 +1873,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 0
-  storyText: Why else would be asking if I didn't want you to? Do you want to go
+  storyText: Why else would I be asking if I didn't want you to?Do {i}you{i/} want
+    to go?
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -1902,7 +1903,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -414.59845
     y: 379.07297
-    width: 147.10135
+    width: 152.32547
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1931,7 +1932,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -251.06877
     y: 337.8969
-    width: 81.884026
+    width: 84.10849
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1984,7 +1985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  text: If you want I can
+  text: If you want I can.
   description: 
   targetBlock: {fileID: 250528488}
   hideIfVisited: 0
@@ -2009,7 +2010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 27
   indentLevel: 0
-  storyText: Do YOU want to go shopping with me
+  storyText: Do {i}you{i/} want to go shopping with me?
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -2036,7 +2037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 26
   indentLevel: 0
-  storyText: '*There voice get a little louder again and sharper*'
+  storyText: '*His voice get a little louder and sharper*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2065,7 +2066,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -168.71526
     y: 293.19104
-    width: 206.52159
+    width: 212.79053
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2237,7 +2238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 64
   indentLevel: 0
-  text: Lets go then
+  text: Lets go then.
   description: 
   targetBlock: {fileID: 250528501}
   hideIfVisited: 0
@@ -2262,7 +2263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 63
   indentLevel: 0
-  text: Sure I can...
+  text: Sure, I can...
   description: 
   targetBlock: {fileID: 250528545}
   hideIfVisited: 0
@@ -2317,7 +2318,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 464.43207
     y: 520.464
-    width: 110.86951
+    width: 113.56583
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2349,7 +2350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 65
   indentLevel: 0
-  storyText: We enter the shopping center, it's busier then it normally is
+  storyText: We enter the shopping center, it's busier than it usually is.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2403,8 +2404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 0
-  storyText: '{vpunch=10,0.5} People are shoving and rushing through the shops. Everone
-    is talking and it''s loud'
+  storyText: '{vpunch=10,0.5} People are shoving and rushing through the shops. Everyone
+    is talking and it''s loud.'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2431,8 +2432,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 80
   indentLevel: 0
-  storyText: I look for the meat section, there's so many people here so it's hard
-    to find
+  storyText: I look for the meat section. There's so many people here which makes
+    it hard to find.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2459,7 +2460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 79
   indentLevel: 0
-  storyText: I go into the shop, it's filled with so many people
+  storyText: I go into the shop... it's filled with so many people.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2536,7 +2537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 76
   indentLevel: 0
-  storyText: Somewhere in the meat section of the shop over there
+  storyText: Somewhere in the meat section over there.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -2563,7 +2564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 75
   indentLevel: 0
-  storyText: He leaves in a rush, now I'm on my own
+  storyText: He leaves in a rush, now I'm on my own.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2592,7 +2593,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 464.09692
     y: 658.5715
-    width: 112.31879
+    width: 115.11621
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2626,7 +2627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 73
   indentLevel: 0
-  storyText: No, we don't have much time before we need to leave so just go by yourself
+  storyText: No, we don't have much time before we need to leave, just go by yourself.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -2680,7 +2681,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 596.6877
     y: 585.2255
-    width: 174.63757
+    width: 177.13165
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2709,7 +2710,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 325.42105
     y: 583.7649
-    width: 125.36225
+    width: 127.519295
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2762,7 +2763,7 @@ MonoBehaviour:
   itemId: 68
   indentLevel: 0
   storyText: Oh no! I almost forgot I needed to get some things! Help me out, go
-    and get some beef for me will you
+    and get some beef for me, will you.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -2789,8 +2790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 67
   indentLevel: 0
-  storyText: We spend some time here looking around for various things, until towards
-    the end of our time there Bill mentions suddenly starts talking
+  storyText: We spend some time here looking around. Towards the end of our time
+    there Bill suddenly starts talking.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2818,7 +2819,7 @@ MonoBehaviour:
   itemId: 83
   indentLevel: 0
   storyText: I eventually find the meat section. Now I need to find the beef, a lot
-    of people are here as well. I'm struggling to get past
+    of people are here as well. I'm struggling to get past.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2890,7 +2891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 88
   indentLevel: 0
-  storyText: It's so loud I can bearly hear him
+  storyText: (It's so loud I can barely hear him)
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2917,7 +2918,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 87
   indentLevel: 0
-  storyText: It's not too bad, I don't know what your talking about
+  storyText: It's not too bad, I don't know what you're talking about.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -2946,7 +2947,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 463.15204
     y: 730.3944
-    width: 113.76805
+    width: 115.11621
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3000,7 +3001,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 0
-  storyText: Hey, I just got back from getting my stuff and your still not done
+  storyText: Hey, I just got back from getting my stuff{i} and {/i}you're still not
+    done.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -3027,7 +3029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 94
   indentLevel: 0
-  storyText: 'We get outside and it''s so much quieter '
+  storyText: '*We get outside. It''s so much quieter*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3081,7 +3083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 92
   indentLevel: 0
-  storyText: He gets the beef and we go to buy it
+  storyText: '*He buys the beef*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3108,7 +3110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 91
   indentLevel: 0
-  storyText: Whatever, let me get it
+  storyText: Whatever, let me get it.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -3135,9 +3137,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 463.1521
+    x: 465.68375
     y: 800.88617
-    width: 113.76805
+    width: 115.11621
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3240,7 +3242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 100
   indentLevel: 0
-  storyText: Good
+  storyText: Good.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -3269,7 +3271,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 463.3761
     y: 867.16174
-    width: 112.31879
+    width: 115.11621
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3297,7 +3299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 98
   indentLevel: 0
-  text: I think I'm okay
+  text: I think I'm okay.
   description: 
   targetBlock: {fileID: 250528534}
   hideIfVisited: 0
@@ -3322,7 +3324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 104
   indentLevel: 0
-  storyText: We should probably head home, I'll talk to you later
+  storyText: We should probably head home, I'll talk to you later.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -3351,7 +3353,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 463.5271
     y: 921.84924
-    width: 112.31879
+    width: 115.11621
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3378,7 +3380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 102
   indentLevel: 0
-  text: It's fine
+  text: It's fine.
   description: 
   targetBlock: {fileID: 250528537}
   hideIfVisited: 0
@@ -3403,7 +3405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 101
   indentLevel: 0
-  storyText: Guess that was a bit hard on you, sorry about that
+  storyText: Guess that was a bit hard on you, sorry about that.
   description: 
   character: {fileID: 575210909}
   portrait: {fileID: 0}
@@ -3538,7 +3540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 108
   indentLevel: 0
-  storyText: I feel like I should just go with what they want
+  storyText: (I feel like I should just go with what he want)
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3567,7 +3569,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 255.71591
     y: 352.15384
-    width: 131.15933
+    width: 132.17046
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4675,7 +4677,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &250528585
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4722,7 +4724,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 1160419157}
+      gameObjectValue: {fileID: 919132148251744575}
       materialValue: {fileID: 0}
       objectValue: {fileID: 0}
       spriteValue: {fileID: 0}

@@ -661,7 +661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &611818554
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 0}
+  selectedFlowchart: {fileID: 1649918456}
 --- !u!4 &1247093154
 Transform:
   m_ObjectHideFlags: 1
@@ -1735,8 +1735,6 @@ GameObject:
   - component: {fileID: 1649918516}
   - component: {fileID: 1649918515}
   - component: {fileID: 1649918514}
-  - component: {fileID: 1649918513}
-  - component: {fileID: 1649918512}
   - component: {fileID: 1649918557}
   - component: {fileID: 1649918556}
   - component: {fileID: 1649918555}
@@ -1752,7 +1750,6 @@ GameObject:
   - component: {fileID: 1649918545}
   - component: {fileID: 1649918544}
   - component: {fileID: 1649918543}
-  - component: {fileID: 1649918542}
   - component: {fileID: 1649918541}
   - component: {fileID: 1649918540}
   - component: {fileID: 1649918539}
@@ -1791,7 +1788,6 @@ GameObject:
   - component: {fileID: 1649918577}
   - component: {fileID: 1649918576}
   - component: {fileID: 1649918575}
-  - component: {fileID: 1649918574}
   - component: {fileID: 1649918573}
   - component: {fileID: 1649918572}
   - component: {fileID: 1649918584}
@@ -1859,6 +1855,7 @@ GameObject:
   - component: {fileID: 1649918632}
   - component: {fileID: 1649918643}
   - component: {fileID: 1649918644}
+  - component: {fileID: 1649918512}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1924,7 +1921,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 97
     y: 75.714294
-    width: 169.79169
+    width: 163.9394
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1952,11 +1949,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1202.5258, y: -206.41498}
+  scrollPos: {x: 1128.76, y: -891.5711}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 432.66666
-  zoom: 0.63999987
+  zoom: 0.54999995
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1964,9 +1961,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1649918546}
-  selectedCommands:
-  - {fileID: 1649918643}
+  - {fileID: 1649918638}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2006,7 +2002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: '*His voice sound higher pitch then normal, he''s also talking a little
+  storyText: '*His voice sounds higher pitch than normal. He''s also talking a little
     quicker*'
   description: 
   character: {fileID: 0}
@@ -2036,7 +2032,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 474.83066
     y: 285.01862
-    width: 144.79169
+    width: 142.12122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2068,7 +2064,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -237.35365
     y: 285.2708
-    width: 117.70835
+    width: 116.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2097,7 +2093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  text: The Museum, I want to see the fossils
+  text: The Museum, I want to see the fossils.
   description: 
   targetBlock: {fileID: 1649918459}
   hideIfVisited: 0
@@ -2122,7 +2118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 16
   indentLevel: 0
-  text: The Zoo, it has some animals I want to see
+  text: The Zoo, it has some animals I want to see.
   description: 
   targetBlock: {fileID: 1649918460}
   hideIfVisited: 0
@@ -2175,7 +2171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: (His voice gets higher pitch again and starts speaking quicker again)
+  storyText: '*His voice gets higher pitched and quicker again*'
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -2202,7 +2198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: Whatever
+  storyText: Whatever.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -2231,7 +2227,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 139.15582
     y: 285.5125
-    width: 88.54167
+    width: 88.78789
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2261,7 +2257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  text: No idea, just never have
+  text: No idea, just never have.
   description: 
   targetBlock: {fileID: 1649918466}
   hideIfVisited: 0
@@ -2286,7 +2282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  storyText: You always have haven't you? Why is that?
+  storyText: You always have, haven't you? Why is that?
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -2313,7 +2309,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: '*His voice goes to how he usually sounds, also he has a small smirk*'
+  storyText: '*His voice goes back to how he usually sounds. He also has a small
+    smirk*'
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -2342,7 +2339,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 139.36465
     y: 209.69374
-    width: 87.50001
+    width: 87.57576
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2370,7 +2367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  text: Sorry about that, I always find it weird using nicknames
+  text: Sorry about that, I find using nicknames weird.
   description: 
   targetBlock: {fileID: 1649918470}
   hideIfVisited: 0
@@ -2395,7 +2392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  storyText: C'mon you know I like be calling Jo
+  storyText: C'mon, you know I like to be called Jo.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -2422,7 +2419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: '*His voice gets a little lower, he sounds a little more gutteral then
+  storyText: '*His voice gets a little lower, he sounds a little more guttural then
     he did before*'
   description: 
   character: {fileID: 0}
@@ -2451,8 +2448,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 137.9361
-    y: 145.26869
-    width: 86.45834
+    y: 143.70619
+    width: 86.36364
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2481,7 +2478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  text: Yeah I am, Joseph
+  text: Yeah I am, Joseph.
   description: 
   targetBlock: {fileID: 1649918474}
   hideIfVisited: 0
@@ -2674,8 +2671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 29
   indentLevel: 0
-  storyText: Really, the Zoo? We're going to a tone of places and you're most excited
-    about the zoo?
+  storyText: '{i}Really{i/}, the Zoo? We''re going to a ton of places and you''re
+    most excited about the zoo?'
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -2814,8 +2811,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 0
-  storyText: 'I start talking about the different animals there: like komodo dragons,
-    Rinos, Pandas and all the animals I want to see.'
+  storyText: '*I start talking about the different animals there: like komodo dragons,
+    Rinos, Pandas and all the animals I want to see*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2844,7 +2841,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -237.38002
     y: 357.02307
-    width: 118.750015
+    width: 117.87879
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2878,7 +2875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 30
   indentLevel: 0
-  text: Yeah, they have a ton of animals I'm interesed in
+  text: Yeah, they have a ton of animals I'm interesed in.
   description: 
   targetBlock: {fileID: 1649918488}
   hideIfVisited: 0
@@ -2975,8 +2972,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 37
   indentLevel: 0
-  storyText: Cool, cool. Anyway we'll be going to a few different places so remember
-    that
+  storyText: Cool, cool. Anyway we'll be going to a few different places, so remember
+    that.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -3087,9 +3084,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 473.61954
-    y: 358.7374
-    width: 145.83334
+    x: 472.3127
+    y: 360.2999
+    width: 143.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3124,7 +3121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 48
   indentLevel: 0
-  text: Yeah, I like ancient animals so I want to get a look at them all
+  text: Yeah, I like ancient animals so I want to get a look at them all.
   description: 
   targetBlock: {fileID: 1649918496}
   hideIfVisited: 0
@@ -3176,8 +3173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 46
   indentLevel: 0
-  storyText: Oh yeah, I remember you talking to me about that when were organising
-    going out
+  storyText: Oh yeah, you talked about that when we were organising things.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -3232,7 +3228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 44
   indentLevel: 0
-  storyText: '*His voice gets lower, sounding more like his normal voice*'
+  storyText: '*His voice gets lower, sounding more like his normal tone*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3288,8 +3284,8 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 105.619514
-    y: 355.4518
-    width: 143.75003
+    y: 353.8893
+    width: 142.12122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3369,8 +3365,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 51
   indentLevel: 0
-  storyText: I start talking about all the different types of fossils, extinct animals
-    and what ones I want to see when visiting.
+  storyText: '*I start talking about all the different types of fossils, extinct
+    animals and which ones I want to see*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3453,7 +3449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 54
   indentLevel: 0
-  storyText: Yeah, yeah, I think you've talked about some of those... uh things before.
+  storyText: Yeah, yeah. I think you've talked about some of those... uh things before.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -3480,8 +3476,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 53
   indentLevel: 0
-  storyText: '*He starts to stretch out his voice, his voice is losing a little bit
-    of energy*'
+  storyText: '*He starts to stretch out his voice, it sounds like he is losing a
+    bit of energy*'
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -3534,11 +3530,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 66
+  itemId: 190
   indentLevel: 0
-  storyText: So I think the first place we'll should stop by is the football stadium.
+  storyText: '*His voice gets sharper and higher*'
   description: 
-  character: {fileID: 635635561}
+  character: {fileID: 0}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3549,34 +3545,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1649918513
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649918452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 65
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 660545996}
-  targetComponentAssemblyName: DialogColourChanger, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: DialogColourChanger
-  targetMethod: ChangeColourToConversationPartner
-  targetMethodText: 'ChangeColourToConversationPartner (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
 --- !u!114 &1649918514
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -3591,9 +3559,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 107.94327
+    x: 106.38077
     y: 440.96594
-    width: 141.66669
+    width: 138.48486
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3602,8 +3570,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1649918513}
-  - {fileID: 1649918512}
   - {fileID: 1649918557}
   - {fileID: 1649918556}
   - {fileID: 1649918555}
@@ -3622,7 +3588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 63
   indentLevel: 0
-  text: The football stadium... uh sure
+  text: The football stadium... uh... sure...
   description: 
   targetBlock: {fileID: 1649918514}
   hideIfVisited: 0
@@ -3647,7 +3613,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 62
   indentLevel: 0
-  storyText: So I think the first place we'll should stop by is the football stadium.
+  storyText: So, I think the first place we should stop by is the football stadium
+    for tour.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -3702,7 +3669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 60
   indentLevel: 0
-  text: R-Right, I know
+  text: R-Right, I know.
   description: 
   targetBlock: {fileID: 1649918503}
   hideIfVisited: 0
@@ -3827,7 +3794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 56
   indentLevel: 0
-  storyText: Remember, we're going to a few places. Not just there
+  storyText: Remember, we're going to a few places. Not just there.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -3856,7 +3823,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 72.28711
     y: 913.8419
-    width: 204.1667
+    width: 200.30304
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3891,7 +3858,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -118.72458
     y: 659.90094
-    width: 116.66668
+    width: 115.45455
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3922,7 +3889,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -387.9462
     y: 656.3222
-    width: 96.875015
+    width: 96.06061
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4003,7 +3970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 97
   indentLevel: 0
-  storyText: We should watch a match some time, would be fun
+  storyText: We should watch a match some time, it would be fun!
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -4103,8 +4070,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 94
   indentLevel: 0
-  storyText: The further we go the louder it gets, there's so many places to go and
-    people are pushing and shoving to get places. I bearly heard what he said
+  storyText: (The further we go the louder it gets. There's so many things to see
+    and people are pushing and shoving to get places. I barely heard what he said)
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4161,7 +4128,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 515.4155
     y: 577.4447
-    width: 83.33334
+    width: 82.72728
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4192,7 +4159,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -272.9464
     y: 580.1556
-    width: 129.16669
+    width: 125.15152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4271,7 +4238,7 @@ MonoBehaviour:
   itemId: 88
   indentLevel: 0
   storyText: See this stadium, imagine how many people they can fit in here. I bet
-    watching an actual match here is great!
+    watching an actual match is great!
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -4326,7 +4293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 86
   indentLevel: 0
-  storyText: '*Joseph starts talking quicker, he''s moving around so quickly I''m
+  storyText: '*Joseph starts talking quicker. He''s moving around so quickly I''m
     worried we''ll get seperated if I don''t speed up*'
   description: 
   character: {fileID: 0}
@@ -4382,35 +4349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 0
-  storyText: (I'll just have to try and deal with this, stadiums are always so busy
-    and I can never stay calm in them)
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1649918542
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649918452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 82
-  indentLevel: 0
-  storyText: (I'll just have to try and deal with this, stadiums are always so busy
+  storyText: (I'll just have to try and deal with this. Stadiums are always so busy
     and I can never stay calm in them)
   description: 
   character: {fileID: 0}
@@ -4466,7 +4405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 80
   indentLevel: 0
-  storyText: After a short drive we get to the football stadium
+  storyText: After a short trip we get to the football stadium
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4523,7 +4462,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 103.04803
     y: 579.4364
-    width: 143.75003
+    width: 140.90909
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4536,7 +4475,6 @@ MonoBehaviour:
   - {fileID: 1649918544}
   - {fileID: 1649918543}
   - {fileID: 1649918643}
-  - {fileID: 1649918542}
   - {fileID: 1649918541}
   - {fileID: 1649918540}
   - {fileID: 1649918539}
@@ -4562,7 +4500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 77
   indentLevel: 0
-  text: Y-yeah
+  text: Y-yeah.
   description: 
   targetBlock: {fileID: 1649918546}
   hideIfVisited: 0
@@ -4670,7 +4608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 73
   indentLevel: 0
-  storyText: Ok then, lets go
+  storyText: Ok then, lets go.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -4697,8 +4635,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 72
   indentLevel: 0
-  storyText: '*He pauses for a second, it looked like he wanted to say something
-    for a moment. His voice gets a little deeper and slower*'
+  storyText: '*He pauses for a second, it looked like he wanted to say something.
+    His voice gets a little deeper and slower*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -4755,7 +4693,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 105.45073
     y: 511.79242
-    width: 142.70834
+    width: 139.69698
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4786,7 +4724,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 69
   indentLevel: 0
-  text: Uh... sure
+  text: ...sure
   description: 
   targetBlock: {fileID: 1649918554}
   hideIfVisited: 0
@@ -4867,8 +4805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 116
   indentLevel: 0
-  storyText: Oh, we can go next week, there's a game then and I know a few people
-    who should be able to get us some tickets.
+  storyText: Oh, we can go next week.There's a game and I know a few people who should
+    be able to get us some tickets.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -4978,8 +4916,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 112
   indentLevel: 0
-  storyText: '*His voice goes a little bit back to normal, but is still sharper and
-    louder then normal*'
+  storyText: '*His voice goes a little closer to normal, but it''s still sharper
+    and louder than usual*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5063,7 +5001,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -118.960526
     y: 723.7281
-    width: 117.70835
+    width: 116.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5092,7 +5030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 108
   indentLevel: 0
-  text: To busy and noisy
+  text: Too busy and noisy.
   description: 
   targetBlock: {fileID: 1649918565}
   hideIfVisited: 0
@@ -5172,7 +5110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 105
   indentLevel: 0
-  storyText: '*His voice gets sharper and raised his voice a little*'
+  storyText: '*His voice gets sharper and higher*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5296,33 +5234,6 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &1649918574
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1649918452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 122
-  indentLevel: 0
-  storyText: '*His voice gets sharper and raised his voice a little*'
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &1649918575
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -5367,7 +5278,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -388.51895
     y: 725.305
-    width: 97.91667
+    width: 97.272736
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5377,7 +5288,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1649918575}
-  - {fileID: 1649918574}
+  - {fileID: 1649918512}
   - {fileID: 1649918573}
   - {fileID: 1649918572}
   - {fileID: 1649918583}
@@ -5396,7 +5307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 119
   indentLevel: 0
-  text: 'Sorry but I really don''t want to '
+  text: Sorry, but I really don't want to.
   description: 
   targetBlock: {fileID: 1649918576}
   hideIfVisited: 0
@@ -5533,7 +5444,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -388.25296
     y: 788.01013
-    width: 98.95834
+    width: 98.48485
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5560,7 +5471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 126
   indentLevel: 0
-  text: I just said it was interesting, not that I wanted to go
+  text: I just said it was interesting, not that I wanted to go.
   description: 
   targetBlock: {fileID: 1649918582}
   hideIfVisited: 0
@@ -5748,7 +5659,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -388.58105
     y: 909.37244
-    width: 97.91667
+    width: 97.272736
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5802,7 +5713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 135
   indentLevel: 0
-  storyText: He seems like he's in a bad mood.
+  storyText: (He seems like he's in a bad mood)
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -5914,7 +5825,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -388.1373
     y: 851.2649
-    width: 98.95834
+    width: 98.48485
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5943,7 +5854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 130
   indentLevel: 0
-  text: It's too loud and noisy
+  text: It's too loud and noisy.
   description: 
   targetBlock: {fileID: 1649918596}
   hideIfVisited: 0
@@ -5970,7 +5881,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 514.40485
     y: 737.3948
-    width: 85.41667
+    width: 85.15152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5999,7 +5910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 151
   indentLevel: 0
-  text: Because you wanted to
+  text: Because you wanted to.
   description: 
   targetBlock: {fileID: 1649918598}
   hideIfVisited: 0
@@ -6081,7 +5992,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 516.3123
     y: 660.3789
-    width: 84.37501
+    width: 83.93939
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6133,7 +6044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 146
   indentLevel: 0
-  storyText: Huh, you don't sound all that interested
+  storyText: Huh, you don't sound all that interested.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -6244,7 +6155,7 @@ MonoBehaviour:
   itemId: 161
   indentLevel: 0
   storyText: '*Eventually we were about to start making our way back home when Joseph
-    turns around to look at me, he voice is sharp*'
+    turns around to look at me. He starts talking in a sharp voice*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6300,8 +6211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 159
   indentLevel: 0
-  storyText: '*We spent a while in the football stadium and looked around pretty
-    much everywhere.*'
+  storyText: '*We spent a while in the football stadium and looked around*'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -6593,7 +6503,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 68.306
     y: 988.7841
-    width: 211.45837
+    width: 207.57578
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6648,8 +6558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 164
   indentLevel: 0
-  storyText: You know you can try and at least pretend to want to go along with the
-    stuff I wanted to do
+  storyText: You know, you could have tried and at least pretended to want to go
+    along with the stuff I wanted to do.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -6749,8 +6659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 175
   indentLevel: 0
-  storyText: Seriously? Then why where you talking about how we were only there for
-    me
+  storyText: Seriously? Then why did you sound like we were only there for me?
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -6835,7 +6744,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67.80492
     y: 1070.3577
-    width: 212.50003
+    width: 208.78789
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6862,7 +6771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 171
   indentLevel: 0
-  text: I was just talking normally. I didn't mean anything
+  text: I was just talking normally. I didn't mean anything.
   description: 
   targetBlock: {fileID: 1649918628}
   hideIfVisited: 0
@@ -6915,7 +6824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 176
   indentLevel: 0
-  text: You asked me stuff and I answered honestly, I didn't mean anything. I was
+  text: You asked me stuff and I answered honestly. I didn't mean anything. I was
     fine with doing the things you wanted to do for today.
   description: 
   targetBlock: {fileID: 1649918642}
@@ -6971,7 +6880,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 137.3929
     y: 1302.5952
-    width: 71.875
+    width: 71.818184
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7021,7 +6930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 184
   indentLevel: 0
-  storyText: Well... guess we should start making our way back now
+  storyText: Well... guess we should start making our way back now.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -7123,7 +7032,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 68.73619
     y: 1216.0278
-    width: 211.45837
+    width: 207.57578
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7176,7 +7085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 179
   indentLevel: 0
-  storyText: O-oh, sorry
+  storyText: O-oh, sorry.
   description: 
   character: {fileID: 635635561}
   portrait: {fileID: 0}
@@ -7233,7 +7142,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 68.7363
     y: 1145.8788
-    width: 212.50003
+    width: 208.78789
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7295,7 +7204,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 1823403963}
+      gameObjectValue: {fileID: 919132148064871053}
       materialValue: {fileID: 0}
       objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
@@ -7340,7 +7249,7 @@ MonoBehaviour:
       floatValue: 0
       stringValue: 
       colorValue: {r: 0, g: 0, b: 0, a: 0}
-      gameObjectValue: {fileID: 1823403963}
+      gameObjectValue: {fileID: 919132148064871053}
       materialValue: {fileID: 0}
       objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
@@ -7566,7 +7475,7 @@ GameObject:
   - component: {fileID: 1785875859}
   m_Layer: 5
   m_Name: SayDialog
-  m_TagString: Untagged
+  m_TagString: ConversationPartner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7930,12 +7839,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820516813}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0803, y: 0.03, z: -8.3926}
-  m_LocalScale: {x: 1.0739, y: 1, z: 0.7275}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0.721, y: 4.03, z: 33.5126}
+  m_LocalScale: {x: 1.1345752, y: 1, z: 0.7275}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 543450652542253111}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1823403963
 GameObject:
@@ -8112,6 +8021,7 @@ Transform:
   - {fileID: 4080303902509367018}
   - {fileID: 779469224640611265}
   - {fileID: 7236940315425710611}
+  - {fileID: 1820516817}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
@@ -8170,7 +8080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &960035409816867167
 PrefabInstance:
   m_ObjectHideFlags: 0

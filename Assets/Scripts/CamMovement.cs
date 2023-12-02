@@ -92,7 +92,7 @@ public class CamMovement : MonoBehaviour
             }
         }
 
-        if(CharacterStressed)
+        if(CharacterStressed && !canMove)
         {
 
             //transform.rotation = Quaternion.RotateTowards(transform.rotation, trackLookLocation, 50 * Time.deltaTime);
@@ -155,7 +155,7 @@ public class CamMovement : MonoBehaviour
 
     public IEnumerator LookBetweenTwoPoints()
     {
-        while (CharacterStressed)
+        while (CharacterStressed && !canMove)
         {
             if (PointToLookTo == null)
             {

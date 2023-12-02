@@ -6423,7 +6423,7 @@ GameObject:
   - component: {fileID: 556167717}
   m_Layer: 5
   m_Name: SayDialog
-  m_TagString: Untagged
+  m_TagString: CanvasForTextBoxes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

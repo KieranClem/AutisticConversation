@@ -4164,6 +4164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerUI
       objectReference: {fileID: 0}
+    - target: {fileID: 547732440047812036, guid: 4754262b0df96ca449cf23508a83265b, type: 3}
+      propertyPath: m_TagString
+      value: CanvasForTextBoxes
+      objectReference: {fileID: 0}
     - target: {fileID: 547732440047812056, guid: 4754262b0df96ca449cf23508a83265b, type: 3}
       propertyPath: m_Pivot.x
       value: 0

@@ -70,26 +70,13 @@ public class StressMeter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z))
-        {
-            RemoveStress(10);
-        }
 
-        if(Input.GetKeyDown(KeyCode.X))
-        {
-            AddToStress(10);
-        }
-
-        if(Input.GetKeyDown(KeyCode.C))
-        {
-            StartCoroutine(SpawnTextBoxes());
-        }
-
+        /*
         if(Input.GetKeyDown(KeyCode.H))
         {
             CanSeeStressGauge = !CanSeeStressGauge;
             stressMeterGauge.transform.parent.gameObject.SetActive(CanSeeStressGauge);
-        }
+        }*/
     }
 
     public void AddToStress(int StressToAdd)
@@ -118,7 +105,7 @@ public class StressMeter : MonoBehaviour
             StartCoroutine(SpawnTextBoxes());
         }
 
-        stressMeterGauge.text = currentStress.ToString() + "/" + stressTracker.MaxStress.ToString();
+        //stressMeterGauge.text = currentStress.ToString() + "/" + stressTracker.MaxStress.ToString();
     }
 
     public void RemoveStress(int StressToRemove)
@@ -129,7 +116,7 @@ public class StressMeter : MonoBehaviour
         if (currentStress < 10)
         {
             MainCamera.CharacterStressed = false;
-            StopCoroutine(MainCamera.StartStressMovement());
+            StopCoroutine(MainCamera.LookBetweenTwoPoints());
             MainCamera.LookToSpeaker(GameObject.FindGameObjectWithTag("ConversationPartner").gameObject);
         }
 

@@ -1258,10 +1258,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 615116370}
-  selectedCommands:
-  - {fileID: 615116373}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -2801,7 +2799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 2122820712}
+  selectedFlowchart: {fileID: 615116371}
 --- !u!4 &1484653519
 Transform:
   m_ObjectHideFlags: 1
@@ -3919,17 +3917,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2122820712 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5179785552333649778, guid: 3c9badc9228a6a94792f96e4b95bda73, type: 3}
-  m_PrefabInstance: {fileID: 2122820708}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2122820709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2122820713
