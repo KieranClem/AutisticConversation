@@ -8,12 +8,14 @@ public class BackAndForth : MonoBehaviour
     public float DistanceToMove = 5f;
     Vector3 pointA;
     Vector3 pointB;
-    
+    Vector3 rotationA;
+    Vector3 rotationB;
+
     // Start is called before the first frame update
     void Start()
     {
-        pointA = new Vector3(this.transform.position.x, 0, 0);
-        pointB = new Vector3(this.transform.position.x + DistanceToMove, 0, 0);
+        pointA = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+        pointB = new Vector3(this.transform.position.x + DistanceToMove, this.transform.position.y, this.transform.position.z);
     }
 
     // Update is called once per frame
@@ -21,6 +23,8 @@ public class BackAndForth : MonoBehaviour
     {
         float time = Mathf.PingPong(Time.time * Speed, 1);
         transform.position = Vector3.Lerp(pointA, pointB, time);
+
+
 
     }
 }

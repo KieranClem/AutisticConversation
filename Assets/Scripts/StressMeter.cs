@@ -167,10 +167,10 @@ public class StressMeter : MonoBehaviour
         {
             GameCanvas = GameObject.FindGameObjectWithTag("CanvasForTextBoxes").GetComponent<RectTransform>();
             MainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CamMovement>();
-            stressMeterGauge = GameObject.FindGameObjectWithTag("StressGauge").GetComponent<Text>();
-            stressMeterGauge.text = currentStress.ToString() + "/" + stressTracker.MaxStress.ToString();
+            //stressMeterGauge = GameObject.FindGameObjectWithTag("StressGauge").GetComponent<Text>();
+            //stressMeterGauge.text = currentStress.ToString() + "/" + stressTracker.MaxStress.ToString();
             StressfulLocation = false;
-            stressMeterGauge.transform.parent.gameObject.SetActive(CanSeeStressGauge);
+            //stressMeterGauge.transform.parent.gameObject.SetActive(CanSeeStressGauge);
         }
     }
 }
