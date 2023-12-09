@@ -49,11 +49,30 @@ MonoBehaviour:
   TimeBeforeAddingToStress: 5
   StressToAddEachLoop: 1
   StressfulLocation: 1
+  InNoisyEnviroment: 0
   waitTimeBetweenSpawningTextBoxes: 1
   numberOfTextBoxesThatCanSpawn: 1
   imageList:
-  - {fileID: 791670989539841027, guid: 78d8cf2a973868548b92e7ca1e9d2462, type: 3}
-  - {fileID: 791670989539841027, guid: c1d239730451a044ea83302796d6c2cc, type: 3}
+  - {fileID: 791670989539841027, guid: 23a05b017c281784dbd25cc98ccc1084, type: 3}
+  - {fileID: 791670989539841027, guid: 6a6eb0fa5c4b32d4e8485dacf962b815, type: 3}
+  - {fileID: 791670989539841027, guid: 0996a0cc9fe449e4ebdb1dd5d840034f, type: 3}
+  - {fileID: 791670989539841027, guid: fdd3df5506febd7488da1a588c419e05, type: 3}
+  - {fileID: 791670989539841027, guid: b7ef0cec4e4150047b0cfd89bcdf4ef5, type: 3}
+  - {fileID: 791670989539841027, guid: f5cca982c19e48e45b5e8e5238c7b3bb, type: 3}
+  - {fileID: 791670989539841027, guid: 11e67ca6321d9e845b23892ea97d9466, type: 3}
+  - {fileID: 791670989539841027, guid: ea7e1399636c1b949858b1e6427898a6, type: 3}
+  - {fileID: 791670989539841027, guid: c2314898a00819e41b4499ca351d7171, type: 3}
+  - {fileID: 791670989539841027, guid: f5b5705c43c2ef641b89b88df8d6103e, type: 3}
+  - {fileID: 791670989539841027, guid: 446cb8f6f61b74f4ca58b4e5efa72ba0, type: 3}
+  - {fileID: 791670989539841027, guid: 6e8575dc275a40a4c99fa2e8e78c055f, type: 3}
+  - {fileID: 791670989539841027, guid: 5210032d9fb39df4981b83412efe1268, type: 3}
+  - {fileID: 791670989539841027, guid: 0c2b37799643d0d4f872a01c1b339a12, type: 3}
+  - {fileID: 791670989539841027, guid: c3f0666ed443b1f489344569401cc3c3, type: 3}
+  - {fileID: 791670989539841027, guid: 1447e079d9ecb6c40b50371ee6e35e63, type: 3}
+  - {fileID: 791670989539841027, guid: 59b2dd79f98262f4a99461bf04321b7f, type: 3}
+  - {fileID: 791670989539841027, guid: cd3877b1b86f929408dac747d5ba4c3e, type: 3}
+  - {fileID: 791670989539841027, guid: 6ea77f91d029267489edf63008e46e4a, type: 3}
+  - {fileID: 791670989539841027, guid: a61b1abfe57bbf147bcac1bc8fa25300, type: 3}
   GameCanvas: {fileID: 0}
   textBoxesThatHaveBeenSpawned: []
 --- !u!114 &1855267061
