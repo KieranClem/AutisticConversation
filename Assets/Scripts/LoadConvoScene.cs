@@ -27,6 +27,11 @@ public class LoadConvoScene : MonoBehaviour
         
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void LoadNeededScene(string CharacterName)
     {
         fadeController.FadeOut();
