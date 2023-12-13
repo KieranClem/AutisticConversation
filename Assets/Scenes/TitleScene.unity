@@ -503,7 +503,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Conversation Game
+  m_Text: Struggles of Conversation
 --- !u!222 &735362644
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -896,8 +896,8 @@ Camera:
   m_GameObject: {fileID: 1413799088}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.213588, g: 1, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1039,8 +1039,8 @@ RectTransform:
   - {fileID: 1247105940}
   - {fileID: 248443485}
   - {fileID: 860434217}
-  - {fileID: 94538375}
   - {fileID: 1789593044}
+  - {fileID: 94538375}
   - {fileID: 726078363}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1141,7 +1141,7 @@ GameObject:
   - component: {fileID: 1789593046}
   - component: {fileID: 1789593045}
   m_Layer: 5
-  m_Name: ControlText (2)
+  m_Name: Disclaimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1159,7 +1159,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1461371930}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1199,7 +1199,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '*This game is only an interpretation of some of the difficulties and doesn
+  m_Text: '*This game is only an interpretation of some of the difficulties and does
     not reflect the experience of all indivduals who struggle with communication'
 --- !u!222 &1789593046
 CanvasRenderer:
